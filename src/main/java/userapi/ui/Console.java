@@ -126,7 +126,6 @@ public class Console implements CommandLineRunner {
             logger.info("User by ID: '{}' delete successfully \n", id);
         } catch (UserNotFoundException e) {
             logger.error(e.getMessage());
-            throw e;
         }
     }
 
